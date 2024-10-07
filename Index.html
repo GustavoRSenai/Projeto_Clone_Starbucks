@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/starbucks-favicon.png" type="image/x-icon">
     <title>Starbucks Clone</title>
 </head>
@@ -11,11 +11,11 @@
     <!-- tag semantica "principal" -->
     <main>
         <!-- div para o círculo -->
-         <div class="circulo"></div>
+        <div class="circulo"></div>
 
-         <header>
+        <header>
             <!-- logotipo -->
-            <a href="#"><img src="assets/logo.png" alt="Logo da empresa"></a>
+            <a href="#" class="logo"><img src="assets/logo.png" alt="Logo da empresa"></a>
 
             <!-- Menu Hamburguer -->
             <div class="toggle" onclick="toggleMenu();"></div>
@@ -26,19 +26,20 @@
                 <li><a href="https://www.starbucks.com.br/cafe">Novidades</a></li>
                 <li><a href="https://www.starbucks.com.br/cafe">Lojas</a></li>
             </ul>
-         </header>
+        </header>
 
          <!-- Conteudo principal -->
         <div class="conteudo">
             <div class="textoPrincipal">
                 <!-- Título -->
                 <h2>Não é apenas um café:
-                    <br><span>Starbucks</span></h2>
-                    <!-- texto -->
-                    <p>Descubra um mundo de sabores Inesquecíveis com a Starbucks. Cada colherada é uma explosão de sabores irresistíveis que vão te conquistar.</p>
-                    
-                    <!-- botão -->
-                    <a href="">Veja mais!</a>
+                <br><span>Starbucks</span></h2>
+
+                <!-- texto -->
+                <p>Descubra um mundo de sabores Inesquecíveis com a Starbucks. Cada colherada é uma explosão de sabores irresistíveis que vão te conquistar.</p>
+                
+                <!-- botão -->
+                <a href="https://starbucks.com.br" target="_blank">Veja mais!</a>
             </div>
             <!-- imagem grande(copo) -->
             <div class="imgBox"><img src="assets/img1.png" alt="copo" class="starbucks"></div>
@@ -49,6 +50,12 @@
             <li><img src="assets/thumb1.png" onclick="imgSlider('assets/img1.png'); changeCircleColor('#017143')"></li>
             <li><img src="assets/thumb2.png" onclick="imgSlider('assets/img2.png'); changeCircleColor('#eb7495')"> </li>
             <li><img src="assets/thumb3.png" onclick="imgSlider('assets/img3.png'); changeCircleColor('#d752b1')"></li>
+        </ul>
+        <!-- links redes sociais -->
+        <ul class="sociais">
+            <li><a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="assets/facebook.png" alt="facebook logo"></a></li>
+            <li><a href="https://www.threads.net/?hl=pt-br" target="_blank"><img src="assets/threads logo.png" alt="threads logo" id="threads"></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img src="assets/instagram.png" alt="instagram logo"></a></li>
         </ul>
     </main>
 </body>
